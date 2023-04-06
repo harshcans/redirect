@@ -12,7 +12,7 @@ function App() {
           <Route path="/error">
             <Error />
           </Route>
-          <Route path="/:id">
+          <Route path="/redirect:id">
             <Brand />
           </Route>
           <Route path="/"><SubMenu /></Route>
