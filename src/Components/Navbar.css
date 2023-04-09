@@ -1,0 +1,300 @@
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.5rem;
+  letter-spacing: -0.2px;
+}
+
+/*  Header  */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+.logo {
+  filter: invert(8%) sepia(100%) saturate(7431%) hue-rotate(244deg)
+    brightness(97%) contrast(136%);
+}
+
+#header-img {
+  width: 170px;
+}
+
+nav > ul {
+  display: flex;
+  gap: 8vw;
+  list-style: none;
+}
+
+/*   Anchors   */
+
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/*  Free Quote  */
+
+#Free_Quote {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5vw;
+  padding-top: 75px;
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+
+.slogan {
+  font-size: 4rem;
+  color: blue;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+
+.form-container {
+  max-width: 400px;
+  letter-spacing: -1.5px;
+  font-size: 3rem;
+  margin-top: -20px;
+}
+
+.form-name,
+.form-email {
+  padding-top: 40px;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+label {
+  display: block;
+  padding: 10px 0px;
+}
+
+#email,
+#name {
+  width: 100%;
+  height: 40px;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  color: black;
+  padding-top: 10px;
+  border: none;
+  background-color: transparent;
+  padding-left: 5px;
+}
+
+
+
+#submit {
+  width: 100%; 
+  margin: 60px 0;
+  height: 60px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  font-size: 2.6rem;
+  letter-spacing: -0.3px;
+}
+
+
+
+/*    Tablet    */
+
+@media all and (min-width: 768px) and (max-width: 899px) {
+  html {
+    font-size: 58%;
+  }
+  
+  .slogan {
+    font-size: 3.6rem;
+  }
+  
+  .form-container {
+  max-width: 300px;
+}
+  
+  #Features {
+    gap: 2vw;
+  }
+  
+  .features-container {
+    width: 230px;
+    min-width: 230px;
+  }
+  
+  #Features h2 {
+    scale: 0.8;
+  }
+  
+  #Pricing {
+    gap: 2vw;
+  }
+
+  .product-wrapper {
+    scale: 0.8;
+  }
+
+  .product-wrapper h2 {
+    font-size: 60px;
+  }
+
+  .product-wrapper .btn {
+    font-size: 25px;
+  }
+}
+
+/*    Phone    */
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 54%;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  [id] {
+  scroll-margin-top: 94px;
+}
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: auto;
+  }
+
+  .logo {
+    padding: 5px 0;
+  }
+
+  .nav-bar > ul {
+    width: 100vw;
+    padding: 10px 3vw;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid black;
+  }
+
+  /*  free quote  */
+
+  #Free_Quote {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 7%;
+    height: 100vh;
+  }
+
+  .slogan {
+    font-size: clamp(20px, 7vw, 30px);
+    letter-spacing: -2px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-container {
+    padding-top: 40px;
+    width: 100%;
+    max-width: 100%;
+  }
+  #submit {
+    display: block;
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  /*  features  */
+
+  #Features {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 60px;
+  }
+
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 310px;
+  }
+
+  .features-container h2 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .features-container p {
+    font-size: 13px;
+  }
+
+  /*  how it works (video)  */
+
+  #How_It_Works {
+    width: auto;
+    padding: 200px 0;
+  }
+
+  .video-wrapper {
+    width: auto;
+    padding: 0px;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  /*  pricing  */
+
+  #Pricing {
+    width: auto;
+    height: auto;
+    padding: 100px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .product-wrapper {
+    gap: 10px;
+  }
+
+  footer {
+    justify-content: center;
+    font-size: 12px;
+  }
+}
