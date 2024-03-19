@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import './src/CountdownPage.css';
+import "./CountdownPage.css";
 
 const Brand = () => {
   const { id } = useParams();
@@ -35,7 +35,7 @@ const Brand = () => {
             cx="60"
             cy="60"
             style={{
-              strokeDashoffset: `${(10 - count) * (314 / 10)}px`, // Circumference of circle: 2πr = 2*3.14*50 = 314
+              strokeDashoffset: `${(10 - countdown) * (314 / 10)}px`, // Circumference of circle: 2πr = 2*3.14*50 = 314
             }}
           />
         </svg>
