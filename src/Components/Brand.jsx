@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
+import './CountdownPage.css';
 
 const Brand = () => {
   const { id } = useParams();
