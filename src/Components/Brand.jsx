@@ -14,7 +14,7 @@ const Brand = () => {
       }, 1000);
       setTimeout(() => {
         window.location.href = externalLink;
-      }, 5000);
+      }, 10000);
       return () => clearInterval(countdownInterval);
     } else {
       history.push("/");
@@ -22,9 +22,25 @@ const Brand = () => {
   }, [id, history]);
 
   return (
-    <div>
-<p> Till then Join Our Telegram Channel -   <a href="https://t.me/teamcalibre">@TeamCalibre</a> </p>
-      <p>Redirecting in {countdown} seconds...</p>
+    <div className="countdown-container">
+      <div className="countdown-circle">
+        <svg className="countdown-svg">
+          <circle
+            className="countdown-progress"
+            strokeWidth="10"
+            stroke="#f1c40f"
+            fill="transparent"
+            r="50"
+            cx="60"
+            cy="60"
+            style={{
+              strokeDashoffset: `${(10 - count) * (314 / 10)}px`, // Circumference of circle: 2πr = 2*3.14*50 = 314
+            }}
+          />
+        </svg>
+        <div className="countdown-text">{countdown}</div>
+      </div>
+    </div>
 
 &nbsp;
 &nbsp;
