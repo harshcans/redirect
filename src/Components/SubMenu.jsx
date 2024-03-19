@@ -13,7 +13,7 @@ function Submenu() {
     const id = Date.now().toString(36) + Math.random().toString(36).substr(2);
     // Store the external link in local storage
     localStorage.setItem(id, externalLink);
-    setNewLink(`https://alphastudyofficial.live/redirect/${id}`);
+    setNewLink(`https://harshcans.netlify.app/redirect/${id}`);
   };
 
   return (
