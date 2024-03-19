@@ -43,11 +43,6 @@ const Brand = () => {
       </div>
     </div>
 
-&nbsp;
-&nbsp;
-&nbsp;
-<p> Till then Join Our Telegram Channel -   <a href="https://t.me/teamcalibre">@TeamCalibre</a> </p>
-    </div>
   );
 };
 
